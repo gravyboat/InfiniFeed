@@ -1,4 +1,4 @@
-#!/usr/python  
+#!/bin/python  
 
 """pulls down files from an rss feed"""
 
