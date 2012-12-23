@@ -7,9 +7,12 @@ import sqlite3
 
 # Initial db and podcast table creation needs to be in a function.
 class dbSetup(object):
+    
     def __init__(self, dbName = 'rss_feeder.db'):
         self.dbName = dbName
+    
     # Creation function that setups the podcast table.
+    
     def createPodcasts(self):
         self.dbConn = sqlite3.connect(self.dbName)
         self.c = self.dbConn.cursor()

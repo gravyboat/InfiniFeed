@@ -3,6 +3,8 @@
 manages our database, allowing us to add entries to the database.
 """
 
+import sqlite3
+
 class dbQuery(object):
     def __init__(self, dbName = 'rss_feeder.db'):
         self.dbName = dbName
@@ -28,3 +30,5 @@ class dbQuery(object):
         self.PID = PID
         self.DID = DID
 
+manage = dbQuery()
+manage.updatePodcasts(ID = 0, name = 'beyond', url = 'http://download.url.com')
